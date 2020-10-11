@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+class func{
+   int data;
+public:
+   func(int data_){
+      data = data_;
+   }
+   void operator()(){
+      cout<<"function object\n";
+   }
+};
 class thread_guard{
    thread &t1;
 public:
